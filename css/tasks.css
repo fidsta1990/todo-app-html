@@ -23,7 +23,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  background: rgb(238, 238, 238);
+  background: var(--white);
 }
 
 h1,
@@ -53,6 +53,29 @@ a {
   box-shadow: var(--lightShadow);
   background: var(--darkBlue);
 }
+
+.underline {
+  visibility: visible;
+  transition: var(--transition);
+  box-shadow: var(--lightShadow);
+  height: 0.2rem;
+  width: 100%;
+  background: linear-gradient(
+    to left,
+    rgb(37, 179, 236),
+    white,
+    rgb(37, 179, 236)
+  );
+}
+
+@media (min-width: 768px) {
+  .underline {
+    visibility: hidden;
+    transition: var(--transition);
+    box-shadow: var(--lightShadow);
+  }
+}
+
 /* end of GLobal styles */
 
 /* All Tasks */
@@ -73,6 +96,7 @@ a {
   width: 100%;
   background-position: center;
   background-size: cover;
+  box-shadow: var(--lightShadow);
 }
 
 .top-header {
@@ -136,20 +160,22 @@ ion-icon {
 
 .container {
   width: 100%;
-  max-width: 900px;
   height: 100vh;
-  margin: 0 auto;
+  padding-top: 2rem;
+  transition: var(--transition);
 }
 
 .task-box {
   height: 7rem;
   width: 100%;
-  max-width: 900px;
-  margin: 1rem auto;
   background: var(--white);
-  border-radius: var(--radius);
-  box-shadow: var(--lighterShadow);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.356);
+  border-bottom-width: 90%;
   padding-left: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--transition);
 }
 
 .task-box h2 {
@@ -169,6 +195,58 @@ ion-icon {
   color: coral;
   --ionicon-stroke-width: 50px;
   font-size: 1.3rem;
+  margin-right: 1rem;
 }
 
+@media (min-width: 768px) {
+  body {
+    background: rgb(238, 238, 238);
+  }
+
+  .container {
+    width: 100%;
+    max-width: 700px;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 2rem;
+    transition: var(--transition);
+  }
+
+  .task-box {
+    height: 7rem;
+    width: 100%;
+    max-width: 700px;
+    margin: 1rem auto;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--lighterShadow);
+    padding-left: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+  }
+}
+
+@media (min-width: 914px) {
+  .container {
+    width: 100%;
+    max-width: 900px;
+    height: 100vh;
+    margin: 0 auto;
+    transition: var(--transition);
+  }
+
+  .task-box {
+    height: 7rem;
+    width: 100%;
+    max-width: 900px;
+    margin: 1rem auto;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--lighterShadow);
+    padding-left: 0.5rem;
+    transition: var(--transition);
+  }
+}
 /* end of Main content */
