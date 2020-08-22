@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* FONTS */
+:root {
+  --white: #fff;
+  --darkBlue: #3a4793;
+  --lighBlue: #25b3ec;
+  --lightPurple: #9787ee;
+  --yellow: #ffbf3e;
+}
+/* End of FONTS */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--white);
+}
+
+.home {
+  background: url("./img/mountain-1.jpg") no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
