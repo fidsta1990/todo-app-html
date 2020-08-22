@@ -55,6 +55,16 @@ a {
 
 /* All Tasks */
 .all-tasks {
+  /* height: 30vh; */
+  overflow: hidden;
+  width: 100%;
+}
+
+/* ENd of All Tasks */
+
+/* Top Header */
+
+.header {
   background: url("../img/mountain-1.jpg");
   /* height: 30vh; */
   overflow: hidden;
@@ -63,7 +73,7 @@ a {
   background-size: cover;
 }
 
-.header {
+.top-header {
   background: rgb(58, 71, 147, 0.6);
   padding: 2.2rem 0.9rem;
   color: var(--white);
@@ -114,5 +124,17 @@ a {
 ion-icon {
   font-size: 1.8rem;
 }
+/* End Of Top Header */
 
-/* ENd of All Tasks */
+/* Main content */
+
+/* .content-area {
+} */
+
+.container {
+  max-width: 1200px;
+  background: red;
+  height: 100vh;
+  margin: 0 auto;
+}
+/* end of Main content */
