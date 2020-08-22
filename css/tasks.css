@@ -78,9 +78,20 @@ a {
   font-size: 2rem;
 }
 
-.header .task {
-  display: block;
-  /* margin: 0.5rem 0; */
+.tasks {
+  display: flex;
+}
+
+.task {
+  font-weight: 300;
+  padding: 0 0.5rem;
+}
+
+.number {
+  font-size: 1.9rem;
+  margin-right: 0.5rem;
+  font-weight: 400;
+  color: var(--lightPurple);
 }
 
 /* ENd ofAll Tasks */
