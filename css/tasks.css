@@ -5,7 +5,7 @@
 :root {
   --white: #fff;
   --darkBlue: #3a4793;
-  --lighBlue: #25b3ec;
+  --lightBlue: #25b3ec;
   --lightPurple: #9787ee;
   --yellow: #ffbf3e;
   --transition: all 0.4s linear;
@@ -92,6 +92,27 @@ a {
   margin-right: 0.5rem;
   font-weight: 400;
   color: var(--lightPurple);
+}
+
+.circle {
+  position: absolute;
+  right: 3rem;
+  top: 6rem;
+  border-radius: 50%;
+  background: white;
+  transition: var(--transition);
+  cursor: pointer;
+  color: var(--lightBlue);
+  padding: 3px 5px;
+}
+
+.circle:hover {
+  color: white;
+  background: var(--lightBlue);
+}
+
+ion-icon {
+  font-size: 1.8rem;
 }
 
 /* ENd ofAll Tasks */
