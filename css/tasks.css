@@ -301,6 +301,8 @@ ion-icon {
   width: 100%;
   color: var(--white);
   padding: 6.25rem 0;
+  overflow: hidden;
+  display: none;
 }
 
 .form-title {
@@ -308,6 +310,7 @@ ion-icon {
   font-size: 3rem;
   font-family: "Barlow Condensed", sans-serif;
   margin-bottom: 5rem;
+  text-transform: capitalize;
 }
 
 form {
@@ -345,6 +348,43 @@ textarea::placeholder {
 
 textarea {
   height: 15.625rem;
+}
+.form-btn {
+  width: 90%;
+  padding: 1rem;
+  border-radius: var(--radius);
+  color: var(--white);
+  background: var(--lightBlue);
+  border: transparent;
+  font-size: 1.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background: rgb(31, 218, 193);
+  box-shadow: var(--lighterShadow);
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+/* .close-btn:hover {
+  font-size: 3.2rem;
+  color: var(--white);
+} */
+
+.close-btn ion-icon {
+  font-size: 3rem;
+  color: rgb(190, 190, 190);
+  transition: var(--transition);
+}
+.close-btn ion-icon:hover {
+  font-size: 3.2rem;
+  color: var(--white);
 }
 
 /* end of Main content */
