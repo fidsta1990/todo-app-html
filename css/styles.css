@@ -38,7 +38,7 @@ a {
 
 .home {
   background: url("../img/mountain-1.jpg");
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   width: 100%;
   background-position: center;
@@ -55,6 +55,7 @@ a {
   transition: var(--transition);
   background: var(--lightPurple);
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .btn:hover {
