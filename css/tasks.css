@@ -302,7 +302,12 @@ ion-icon {
   color: var(--white);
   padding: 6.25rem 0;
   overflow: hidden;
-  display: none;
+  /* display: none; */
+  transform: translate(0, 100%);
+}
+
+.task-form.active {
+  transform: translate(0, 0);
 }
 
 .form-title {
@@ -385,6 +390,7 @@ textarea {
 .close-btn ion-icon:hover {
   font-size: 3.2rem;
   color: var(--white);
+  transform: rotate(180deg);
 }
 
 /* end of Main content */
