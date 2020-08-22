@@ -9,8 +9,10 @@
   --lightPurple: #9787ee;
   --yellow: #ffbf3e;
   --transition: all 0.4s linear;
+  --lighterShadow: 0px 5px 10px grey;
   --lightShadow: 0px 10px 15px grey;
   --darkShadow: 0px 10px 20px grey;
+  --radius: 0.3rem;
 }
 /* End of FONTS */
 
@@ -21,7 +23,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  background: var(--white);
+  background: rgb(238, 238, 238);
 }
 
 h1,
@@ -128,13 +130,45 @@ ion-icon {
 
 /* Main content */
 
-/* .content-area {
-} */
+.content-area {
+  width: 100%;
+}
 
 .container {
-  max-width: 1200px;
-  background: red;
+  width: 100%;
+  max-width: 900px;
   height: 100vh;
   margin: 0 auto;
 }
+
+.task-box {
+  height: 7rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 1rem auto;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--lighterShadow);
+  padding-left: 0.5rem;
+}
+
+.task-box h2 {
+  color: rgb(88, 88, 88);
+  font-weight: 400;
+}
+
+.task-box p {
+  font-size: 0.8rem;
+  padding-top: 0.6rem;
+}
+
+.task-box ion-icon {
+  margin-top: 0.5rem;
+  border: 1px solid grey;
+  border-radius: var(--radius);
+  color: coral;
+  --ionicon-stroke-width: 50px;
+  font-size: 1.3rem;
+}
+
 /* end of Main content */
