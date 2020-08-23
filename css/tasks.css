@@ -304,6 +304,7 @@ ion-icon {
   overflow: hidden;
   /* display: none; */
   transform: translate(0, 100%);
+  transition: var(--transition);
 }
 
 .task-form.active {
